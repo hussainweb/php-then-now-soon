@@ -4,6 +4,5 @@ log/*.log
 tmp/**
 node_modules/
 .sass-cache
-
-#IDE Directories
-.idea/
+css/reveal.min.css
+js/reveal.min.js

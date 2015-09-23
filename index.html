@@ -38,6 +38,10 @@
 				border: 0;
 				background-color: transparent;
 			}
+
+			.reveal .slides {
+				margin-bottom: 100px;
+			}
 		</style>
 	</head>
 
@@ -53,64 +57,79 @@
 			<h2>What PHP-FIG means to Drupal</h2>
 			<h3>An account of PHP history and renaissance</h3>
 			<p>
-				<small>By <a href="http://hussainweb.me">Hussain Abbas</a> / <a href="http://twitter.com/hussainweb">@hussainweb</a><br />
-					for various Drupal conferences.</small>
+				<small>&mdash; <a href="http://hussainweb.me">Hussain Abbas</a> / <a href="http://twitter.com/hussainweb">@hussainweb</a></small>
 			</p>
 		</section>
 
 		<section>
 			<p>
 				<img src="images/hussain-abbas.jpg" />
-				<small>"I always carry a book of <em>(sic)</em> PSR" - Someone at <a href="http://axelerant.com">Axelerant</a></small>
-			</p>
-		</section>
-
-		<section>
-			<p>
-				<img src="images/axelerant-logo.png" />
-				<small>We're Hiring!</small>
+				<small>My usual photo</small>
 			</p>
 		</section>
 	</section>
 
 	<section>
-		<section>
-			<h1>Why?</h1>
+		<section id="history">
+			<h1>History</h1>
 		</section>
 
 		<section>
-			<h2>PHP 4</h2>
+			<h2>My PHP story</h2>
 		</section>
 
 		<section>
-			<h2>PHP 5</h2>
-			<h3>Better Object Oriented Programming Support</h3>
+			<h2>Open Source?</h2>
+            <ul>
+                <li>My own components.</li>
+                <li>Where to share code?</li>
+                <li>Didn't bother.</li>
+            </ul>
 		</section>
+
+        <section>
+            <h2>Frameworks? CMS?</h2>
+        </section>
+
+        <section>
+            <h2>Move on...</h2>
+        </section>
+    </section>
+
+    <section>
+        <section>
+            <h1>Drupal</h1>
+            <h2>Code I could get onboard with</h2>
+            <p><img src="images/slide-drupal.png" class="no-border" /></p>
+        </section>
+
+        <section>
+            <h2>Hooks? Hmmm...</h2>
+            <p><img src="images/slide-drupal-hooks.jpg" /></p>
+        </section>
+
+        <section>
+            <h2>Drupalism</h2>
+        </section>
+    </section>
+
+    <section>
+        <section id="php5">
+            <h1>PHP 5</h1>
+            <h2>Better object oriented programming support</h2>
+        </section>
+
+        <section id="php53">
+            <h2>PHP 5.3</h2>
+            <ul>
+                <li>Introduced namespaces.</li>
+                <li>Better code organization.</li>
+            </ul>
+        </section>
 
 		<section>
 			<h2>From NIH to PIE</h2>
 			<p><img src="images/slide-pie.jpg" /></p>
-		</section>
-
-		<section>
-			<h2>PHP 5.3</h2>
-			<h3>Namespaces</h3>
-		</section>
-	</section>
-
-	<section>
-		<section id="drupal">
-			<h1>Drupal</h1>
-			<p><img src="images/slide-drupal.png" class="no-border" /></p>
-		</section>
-
-		<section>
-			<h2>Modules</h2>
-			<p><img src="images/slide-drupal-hooks.jpg" /></p>
-		</section>
-
-		<section>
-			<h2>Drupalism</h2>
 		</section>
 	</section>
 
@@ -128,51 +147,85 @@
 			<h2>PHP Standard Recommendations</h2>
 			<ul>
 				<li>PSR-4, <s>PSR-0</s></li>
-				<li>PSR-1 and PSR-2</li>
-				<li>PSR-7</li>
+                <li>PSR-3</li>
+                <li>PSR-7</li>
 				<li>Other PSR's</li>
 				<li>Future PSR's</li>
 			</ul>
 		</section>
+
+        <section>
+            <h2>Autoloading</h2>
+            <p>
+                <img src="images/autoload.png" class="no-border" />
+            </p>
+        </section>
+
+        <section>
+            <h2>PSR-0</h2>
+            <p>File: <code>.../lib/Drupal/book/BookManager.php</code></p>
+            <pre><code>
+                namespace Drupal\book;
+
+                class BookManager {
+                ...
+                }
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Shift to PSR-4</h2>
+            <p>
+                <img src="images/psr.png" class="no-border" />
+            </p>
+        </section>
+
+        <section>
+            <img src="images/logo-composer.png" class="no-border" />
+        </section>
+
+        <section>
+            <h2>PSR-3</h2>
+            <p>
+                <img src="images/psr3.png" class="no-border" />
+            </p>
+        </section>
 	</section>
 
 	<section>
-		<section id="composer">
-			<h2>Composer</h2>
-			<p><img src="images/logo-composer.png" class="no-border" /></p>
+		<section id="benefits">
+			<h1>Benefits</h1>
 		</section>
 
-		<section>
-			<p><img src="images/logo-packagist.png" class="no-border" /></p>
-		</section>
+        <section>
+            <h2>Collaborate</h2>
+            <ul>
+                <li>Any logger implementing PSR-3</li>
+                <li>Any HTTP client implementing PSR-7</li>
+            </ul>
+        </section>
 
-		<section>
-			<h2>League of Extraordinary Packages</h2>
-			<p><img src="images/logo-league.png" class="no-border" /></p>
-		</section>
+        <section>
+            <h2>Reuse</h2>
+            <ul>
+                <li>Symfony, Zend, Doctrine, Twig, and other components.</li>
+                <li>Stack Builders to add functionality as middlewares.</li>
+            </ul>
+        </section>
 
-		<section>
-			<h2>In Drupal</h2>
-			<p><img src="images/drupal_composer.png" class="no-border" /></p>
-		</section>
-	</section>
+        <section>
+            <h2>Maintain less code</h2>
+            <h3>Focus on what makes Drupal "Drupal"</h3>
+        </section>
 
-	<section>
-		<section id="symfony">
-			<h1>Symfony Components</h1>
-			<p><img src="images/logo-symfony.png" class="no-border" /></p>
-		</section>
-
-		<section>
-			<h2>Components in Drupal</h2>
-			<p><img src="images/logo-drupal8.png" class="no-border" /></p>
-		</section>
-	</section>
-
-	<section>
-		<section id="future">
-			<h1>The Future</h1>
-		</section>
+        <section>
+            <h2>The sites that you build have</h2>
+            <ul>
+                <li>Clean code</li>
+                <li>Maintainable code</li>
+                <li>Testable code</li>
+            </ul>
+        </section>
 	</section>
 
 	<section>
@@ -180,7 +233,8 @@
 			<h1>Thank you!</h1>
 			<ul>
 				<li><a href="https://twitter.com/hussainweb">@hussainweb</a></li>
-				<li><a href="http://bit.ly/php-dcp15">http://bit.ly/php-dcp15</a></li>
+                <li>Please provide feedback at <a href="https://events.drupal.org/node/2446">https://events.drupal.org/node/<strong>2446</strong></a></li></li>
+				<!--<li><a href="http://bit.ly/php-fig-bcn15">http://bit.ly/php-fig-bcn15</a></li>-->
 				<li><a href="https://axelerant.com/">Axelerant</a></li>
 			</ul>
 		</section>
@@ -188,9 +242,9 @@
 
 </div>
 
-			<footer style="position: absolute; bottom: 1em; left: 1em;">
+			<footer style="position: absolute; bottom: 1em; left: 1em; width: 100%;">
 				<img src="images/logo-axelerant-small.png" />
-				<img src="images/logo-footer-drupal8.png" />
+				<img src="images/logo-dcon-bcn.png" style="position: absolute; right: 1.5em;" />
 			</footer>
 
 		</div>
